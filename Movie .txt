@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>movie booking</title>
+<link rel="stylesheet" href="movie.css">
+<style>
+
+.container {
+ width:100%; 
+background-color: #ffffff;
+padding: 20px;
+} 
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.language-buttons {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.language-buttons button {
+padding: 10px 20px;
+margin: 0 10px;
+border: none;
+background-color:#1161ee;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.language-buttons button:hover {
+ background-color: #0b47ae
+}
+
+.login-form .group .button:hover{
+background-color: #0b47ae;
+}
+.movie-options {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.movie {
+width: 150px;
+text-align: center;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+
+.movie img {
+ width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.seat-selection, .ticket-selection, .date-selection, .total-amount {
+margin-top: 20px;
+}
+
+/* Styling for seat grid */
+.seats {
+display: flex;
+justify-content: space-around;
+margin-bottom: 10px;
+}
+
+.seat {
+display: inline-block;
+width: 40px;
+height: 40px;
+background-color: #ddd;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+border-radius: 4px;
+margin: 5px;
+}
+
+.seat.selected {
+background-color: #0b47ae;
+color: white;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!--login page -->
+
+<div class="login-body">
+<div class="login-container">
+
+<label for="tab" class="login-tab">
+<h2>SIGN UP</h2>
+</label>
+
+<div class="login-form">
+<div class="signup">
+
+<div class="group">
+<label for="username" class="label">username</label>
+<input id="username" type="text" class="input">
+</div>
+
+<div class="group">
+<label for="password" class="label">Password</label>
+<input id="password" type="password" class="input">
+</div>
+
+<div class="group">
+<label for ="pass" class="label">Re-Enter Password</label>
+<input id="pass" type="password" class="input">
+</div>
+
+<div class="group">
+<label for="email" class="label">Email Address</label>
+<input id="email" type="text" class="input">
+</div>
+
+<div class="group">
+<input type="submit" class="button" value="SIGN UP">
+</div>
+                    
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- main page of webiste -->
+<main>
+<div class="container">
+<h1>MOVIE TICKET BOOKING</h1>
+
+<div class="language-select">
+<label>SELECT LANGUAGE</label>
+
+<div class="language-buttons">
+<button>ALL</button>
+<button>ENGLISH</button>
+<button>HINDI</button>
+<button>MARATHI</button>
+<button>TELUGU</button>
+</div>
+</div>
+
+<div class="movie-select">
+<label>SELECT A MOVIE</label>
+<div class="movie-options">
+
+<div class="movie english">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\Transformers_One_Official_Poster.jpg" alt="Transformer One" />
+<h3>Transformer One</h3>
+<p>Langauge:English</p>
+</div>
+
+<div class="movie english">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\despicable me 4.jpg" alt="Despicable Me 4" />
+<h3>Despicable Me 4</h3>
+<p>Langauge:English</p>
+</div>
+
+<div class="movie english">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\joker.jpg" alt="Joker" />
+<h3>Joker</h3>
+<p>Langauge:English</p>
+</div>
+
+<div class="movie english">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\inside out 2.jpg" alt="Inside out" />
+<h3>Inside Out</h3>
+<p>Langauge:English</p>
+</div>
+
+<div class="movie english">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\white bird.jpg" alt="White Bird" />
+<h3>White Bird</h3>
+<p>Langauge:English</p>
+</div>
+
+<div class="movie hindi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\tumbad.jpg" alt="Tumbbad" />
+<h3>Tumbbad</h3>
+<p>Langauge:Hindi</p>
+</div>
+
+<div class="movie hindi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\jigra.jpg" alt="Jigra" />
+<h3>Jigra</h3>
+<p>Langauge:Hindi</p>
+</div>
+                        
+<div class="movie hindi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\devara.jpg" alt="devara" />
+<h3>Devra</h3>
+<p>Langauge:Telugu</p>
+</div>
+
+<div class="movie hindi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\Stree_2.jpg" alt="Stree 2" />
+<h3>Stree 2</h3>
+<p>Langauge:Hindi</p>
+</div>
+
+                        
+<div class="movie hindi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\The buckingham murders.jpg" alt="The Buckingham Murders" />
+<h3>The Buckingham Murders</h3>
+<p>Langauge:Hindi</p>
+</div>
+
+                        
+<div class="movie telugu">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\vettaiyan.jpg" alt="Vettaiyan" />
+<h3>Vettaiyan</h3>
+<p>Langauge:Telugu</p>
+</div>
+
+<div class="movie marathi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\Navra_Maza_Navsacha_2.jpg" alt="Navra maza navsacha" />
+<h3>Navra Maza Navsacha 2</h3>
+<p>Langauge:Marathi</p>
+</div>
+
+<div class="movie marathi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\Phullwanti.jpg" alt="Phulvanti" />
+<h3>Phulvanti</h3>
+<p>Langauge:Marathi</p>
+</div>
+
+<div class="movie marathi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\ek daav bhutacha.jpg" alt="ek daav bhootacha" />
+<h3>Ek Daav Bhootacha</h3>
+<p>Langauge:Marathi</p>
+</div>
+
+<div class="movie marathi">
+<img src="C:\Users\Owner\Desktop\movie website\images used in website\Yek-Number.jpg" alt="yek number" />
+<h3>Yek Number</h3>
+<p>Langauge:Marathi</p>
+</div>
+
+</div>
+</div>
+
+<div class="seat-selection">
+<label>SELECT SEAT</label>
+<div class="seats">
+<span class="seat">A1</span>
+<span class="seat">A2</span>
+<span class="seat">A3</span>
+<span class="seat">A4</span>
+<span class="seat">A5</span>
+<span class="seat">A6</span>
+<span class="seat">A7</span>
+<span class="seat">A8</span>
+<span class="seat">A9</span>
+
+</div>
+
+<div class="seats">
+<span class="seat">B1</span>
+<span class="seat">B2</span>
+<span class="seat">B3</span>
+<span class="seat">B4</span>
+<span class="seat">B5</span>
+<span class="seat">B6</span>
+<span class="seat">B7</span>
+<span class="seat">B8</span>
+<span class="seat">B9</span>
+</div>
+                
+<!-- Ticket Number -->
+<div class="ticket-selection">
+<label for="tickets">Number of Tickets:</label>
+<input type="number" id="tickets" min="1" max="10" value="1" />
+</div>
+
+<!-- Select Date -->
+<div class="date-selection">
+<label for="date">Select Date:</label>
+<input type="date" id="date" required />
+</div>
+
+<!-- Total Amount -->
+<div class="total-amount">
+<label for="total">Total Amount:</label>
+<p id="total">₹200</p>
+</div>
+
+<!-- Book Now Button -->
+<button>BOOK NOW</button>
+</div>
+</div>
+</main>
+
+<!--footer of website-->
+<div class="footer">
+<div class="col-1">
+<h3>Browse All</h3>
+<a href="#">Now Showing</a>
+<a href="#">Cooming Soon</a>
+<a href="#">Movies</a>
+<a href="#">Theatres</a>
+</div>
+
+<div class="col-2">
+<h3>Links</h3>
+<a href="#">Sign up</a>
+<a href="#">Help</a>
+<a href="#">About</a>
+<a href="#">Contact Us</a>
+</div>
+
+<div class="col-3">
+<h3>Enquiry</h3>
+<a href="#">Support Service (24x7)</a>
+<a href="#">FAQs</a>
+</div>
+</div>
+</div>
+</body>
+</html>
